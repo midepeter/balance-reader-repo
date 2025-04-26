@@ -85,8 +85,9 @@ public class BalanceReaderApplication {
             public boolean enabled() {
                 boolean enableMetricsExport = true;
 
-                if (System.getenv("ENABLE_METRICS") != null
-                    && System.getenv("ENABLE_METRICS").equals("false")) {
+                if (
+//                        System.getenv("ENABLE_METRICS") != null &&
+                System.getenv("ENABLE_METRICS").equals("false")) {
                     enableMetricsExport = false;
                 }
 
